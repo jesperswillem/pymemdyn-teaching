@@ -1,0 +1,123 @@
+REMARK LIGPARGEN GENERATED PDB FILE
+ATOM      1  H00 LIG     1       1.000   1.000   0.000
+ATOM      2  C01 LIG     1      -0.087   1.000   0.000
+ATOM      3  C02 LIG     1      -0.786   1.000   1.207
+ATOM      4  C03 LIG     1      -0.734   0.944  -1.221
+ATOM      5  C04 LIG     1      -0.078   0.903   2.486
+ATOM      6  C05 LIG     1      -2.176   1.016   1.120
+ATOM      7  H06 LIG     1      -0.137   0.902  -2.127
+ATOM      8  C07 LIG     1      -2.120   0.939  -1.295
+ATOM      9  N08 LIG     1       1.099   0.252   2.423
+ATOM     10  C09 LIG     1      -0.591   1.348   3.703
+ATOM     11  H0A LIG     1      -2.783   1.018   2.018
+ATOM     12  C0B LIG     1      -2.828   0.976  -0.099
+ATOM     13  C0C LIG     1      -2.780   0.955  -2.655
+ATOM     14  C0D LIG     1       1.734  -0.040   3.575
+ATOM     15  H0E LIG     1      -1.539   1.867   3.764
+ATOM     16  C0F LIG     1       0.116   1.130   4.869
+ATOM     17  H0G LIG     1      -3.912   0.973  -0.093
+ATOM     18  N0H LIG     1      -4.206   0.665  -2.640
+ATOM     19  H0I LIG     1      -2.639   1.952  -3.088
+ATOM     20  H0J LIG     1      -2.304   0.225  -3.320
+ATOM     21  C0K LIG     1      -5.177   1.609  -2.542
+ATOM     22  C0M LIG     1      -4.739  -0.679  -2.673
+ATOM     23  O0N LIG     1      -4.972   2.810  -2.456
+ATOM     24  N0O LIG     1      -6.388   0.976  -2.557
+ATOM     25  H0P LIG     1      -4.499  -1.153  -3.628
+ATOM     26  H0Q LIG     1      -4.389  -1.255  -1.810
+ATOM     27  C0R LIG     1      -6.218  -0.387  -2.583
+ATOM     28  C0S LIG     1      -7.664   1.620  -2.495
+ATOM     29  O0T LIG     1      -7.093  -1.242  -2.541
+ATOM     30  H0U LIG     1      -8.031   1.696  -1.477
+ATOM     31  C0V LIG     1      -8.710   1.371  -3.546
+ATOM     32  C0W LIG     1      -8.066   2.720  -3.446
+ATOM     33  H0X LIG     1      -8.456   0.758  -4.403
+ATOM     34  H0Y LIG     1      -9.739   1.278  -3.225
+ATOM     35  H0Z LIG     1      -8.657   3.537  -3.055
+ATOM     36  H10 LIG     1      -7.398   3.000  -4.249
+ATOM     37  C11 LIG     1       1.282   0.405   4.802
+ATOM     38  C12 LIG     1       2.910  -0.965   3.474
+ATOM     39  H13 LIG     1      -0.259   1.483   5.819
+ATOM     40  F14 LIG     1       1.939   0.092   5.928
+ATOM     41  N15 LIG     1       2.467  -2.321   3.080
+ATOM     42  H16 LIG     1       3.509  -0.976   4.394
+ATOM     43  H17 LIG     1       3.564  -0.532   2.712
+ATOM     44  C18 LIG     1       3.421  -2.907   2.131
+ATOM     45  C19 LIG     1       2.243  -3.176   4.265
+ATOM     46  H1A LIG     1       4.360  -3.111   2.649
+ATOM     47  H1B LIG     1       3.635  -2.195   1.327
+ATOM     48  C1C LIG     1       2.894  -4.169   1.487
+ATOM     49  H1D LIG     1       1.595  -2.662   4.981
+ATOM     50  H1E LIG     1       3.190  -3.381   4.777
+ATOM     51  C1F LIG     1       1.558  -4.472   3.874
+ATOM     52  H1G LIG     1       3.625  -4.584   0.788
+ATOM     53  H1H LIG     1       1.961  -3.987   0.948
+ATOM     54  S1I LIG     1       2.573  -5.398   2.713
+ATOM     55  H1J LIG     1       0.591  -4.285   3.401
+ATOM     56  H1K LIG     1       1.404  -5.103   4.750
+ATOM     57  O1M LIG     1       1.754  -6.414   2.084
+ATOM     58  O1N LIG     1       3.827  -5.740   3.357
+TER 
+CONECT    1    2 
+CONECT    2    3 
+CONECT    2    4 
+CONECT    3    5 
+CONECT    3    6 
+CONECT    4    7 
+CONECT    4    8 
+CONECT    5    9 
+CONECT    5   10 
+CONECT    6   11 
+CONECT    6   12 
+CONECT    8   13 
+CONECT    9   14 
+CONECT   10   15 
+CONECT   10   16 
+CONECT   12   17 
+CONECT   13   18 
+CONECT   13   19 
+CONECT   13   20 
+CONECT   18   21 
+CONECT   18   22 
+CONECT   21   23 
+CONECT   21   24 
+CONECT   22   25 
+CONECT   22   26 
+CONECT   22   27 
+CONECT   24   28 
+CONECT   27   29 
+CONECT   28   30 
+CONECT   28   31 
+CONECT   28   32 
+CONECT   31   33 
+CONECT   31   34 
+CONECT   32   35 
+CONECT   32   36 
+CONECT   14   37 
+CONECT   14   38 
+CONECT   16   39 
+CONECT   37   40 
+CONECT   38   41 
+CONECT   38   42 
+CONECT   38   43 
+CONECT   41   44 
+CONECT   41   45 
+CONECT   44   46 
+CONECT   44   47 
+CONECT   44   48 
+CONECT   45   49 
+CONECT   45   50 
+CONECT   45   51 
+CONECT   48   52 
+CONECT   48   53 
+CONECT   48   54 
+CONECT   51   55 
+CONECT   51   56 
+CONECT   54   57 
+CONECT   54   58 
+CONECT    8   12 
+CONECT   16   37 
+CONECT   24   27 
+CONECT   31   32 
+CONECT   51   54 
+END

@@ -1,0 +1,30 @@
+#include "ffoplsaa_mod.itp"
+#include "protein.itp"
+; Include Position restraint file
+#ifdef POSRES
+#include "eq/800/posre.itp"
+#endif
+; Include Position restraint file
+#ifdef DISRE
+#include "eq/800/disre.itp"
+#endif
+#include "E3R.itp"
+; Include Position restraint file
+#ifdef POSRESLIG
+#include "eq/800/posre_lig.itp"
+#endif
+#include "/home/jespers/24.CB2/2.pymemdyn/holo/popc.itp"
+#include "ions.itp"
+#include "spc.itp"
+[ system ]
+; Name
+Membrane protein
+[ molecules ]
+; Compound  #mols
+protein 1
+;
+lig 1
+;
+;
+;
+;

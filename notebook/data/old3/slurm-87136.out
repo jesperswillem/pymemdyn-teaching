@@ -1,0 +1,155 @@
+LigandInit Step (1/35): pdb2gmx.
+LigandInit Step (2/35): set_itp.
+LigandInit Step (3/35): concat.
+LigandInit Step (4/35): editconf.
+LigandInit Step (5/35): set_protein_size.
+LigandInit Step (6/35): editconf2.
+LigandInit Step (7/35): set_protein_size2.
+LigandInit Step (8/35): set_popc.
+LigandInit Step (9/35): editconf3.
+LigandInit Step (10/35): make_ndx_lig.
+LigandInit Step (11/35): genrestr_lig.
+LigandInit Step (12/35): editconf4.
+LigandInit Step (13/35): make_topol.
+LigandInit Step (14/35): editconf5.
+LigandInit Step (15/35): solvate.
+LigandInit Step (16/35): set_water.
+LigandInit Step (17/35): editconf6.
+LigandInit Step (18/35): editconf7.
+LigandInit Step (19/35): solvate2.
+LigandInit Step (20/35): count_lipids.
+LigandInit Step (21/35): make_topol2.
+LigandInit Step (22/35): make_topol_lipids.
+LigandInit Step (23/35): make_ffoplsaanb.
+LigandInit Step (24/35): set_grompp.
+LigandInit Step (25/35): set_chains.
+LigandInit Step (26/35): make_ndx.
+Going to read 0 old index file(s)
+Analysing residue names:
+There are:   299    Protein residues
+There are:   164      Other residues
+There are: 11363      Water residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+  0 System              : 47381 atoms
+  1 Protein             :  4758 atoms
+  2 Protein-H           :  2327 atoms
+  3 C-alpha             :   299 atoms
+  4 Backbone            :   897 atoms
+  5 MainChain           :  1197 atoms
+  6 MainChain+Cb        :  1480 atoms
+  7 MainChain+H         :  1485 atoms
+  8 SideChain           :  3273 atoms
+  9 SideChain-H         :  1130 atoms
+ 10 Prot-Masses         :  4758 atoms
+ 11 non-Protein         : 42623 atoms
+ 12 Other               :  8534 atoms
+ 13 LIG                 :    58 atoms
+ 14 POP                 :  8476 atoms
+ 15 Water               : 34089 atoms
+ 16 SOL                 : 34089 atoms
+ 17 non-Water           : 13292 atoms
+
+ nr : group      '!': not  'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom       '&': and  'del' nr         'splitres' nr   'l': list residues
+ 't': atom type  '|': or   'keep' nr        'splitat' nr    'h': help
+ 'r': residue              'res' nr         'chain' char
+ "name": group             'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 
+
+LigandInit Step (27/35): grompp.
+LigandInit Step (28/35): trjconv.
+LigandInit Step (29/35): get_charge.
+LigandInit Step (30/35): genion.
+LigandInit Step (31/35): grompp2.
+LigandInit Step (32/35): trjconv2.
+LigandInit Step (33/35): grompp3.
+LigandInit Step (34/35): trjconv3.
+LigandInit Step (35/35): clean_pdb.
+LigandMinimization Step (1/2): set_stage_init.
+LigandMinimization Step (2/2): mdrun.
+LigandEquilibration Step (1/7): editconf.
+LigandEquilibration Step (2/7): make_ndx.
+
+LigandEquilibration Step (3/7): genrestr.
+LigandEquilibration Step (4/7): grompp.
+LigandEquilibration Step (5/7): set_stage_init.
+LigandEquilibration Step (6/7): set_stage_init2.
+LigandEquilibration Step (7/7): mdrun.
+LigandRelax Step (1/12): relax800.
+LigandRelax Step (2/12): grompp800.
+LigandRelax Step (3/12): mdrun800.
+LigandRelax Step (4/12): relax600.
+LigandRelax Step (5/12): grompp600.
+LigandRelax Step (6/12): mdrun600.
+LigandRelax Step (7/12): relax400.
+LigandRelax Step (8/12): grompp400.
+LigandRelax Step (9/12): mdrun400.
+LigandRelax Step (10/12): relax200.
+LigandRelax Step (11/12): grompp200.
+LigandRelax Step (12/12): mdrun200.
+BasicBWRelax Step (1/4): getbw.
+The following two lists must have the same dimension:
+36 36
+ 410 4323 ('1.46', '7.47')
+ 450 4369 ('1.49', '7.50')
+ 465  904 ('1.50', '2.47')
+ 465  931 ('1.50', '2.50')
+ 465 4312 ('1.50', '7.46')
+ 505  904 ('1.53', '2.47')
+ 580  867 ('1.57', '2.44')
+ 828 1645 ('2.42', '3.46')
+ 848 4419 ('2.43', '7.53')
+ 931 4312 ('2.50', '7.46')
+1468 2218 ('3.34', '4.53')
+1468 2274 ('3.34', '4.57')
+1499 3778 ('3.36', '6.48')
+1533 2159 ('3.38', '4.50')
+1533 2218 ('3.38', '4.53')
+1554 3710 ('3.40', '6.44')
+1607 2956 ('3.44', '5.54')
+1659 3012 ('3.47', '5.57')
+1724 3012 ('3.51', '5.57')
+1724 3052 ('3.51', '5.60')
+2956 3665 ('5.54', '6.41')
+3767 4298 ('6.47', '7.45')
+3836 4191 ('6.51', '7.38')
+3836 4202 ('6.51', '7.39')
+BasicBWRelax Step (2/4): set_stage_init.
+BasicBWRelax Step (3/4): grompp.
+BasicBWRelax Step (4/4): mdrun.
+BasicBWCollectResults Step (1/24): trjcat.
+BasicBWCollectResults Step (2/24): trjconv.
+BasicBWCollectResults Step (3/24): eneconv.
+BasicBWCollectResults Step (4/24): rms1.
+BasicBWCollectResults Step (5/24): rms2.
+BasicBWCollectResults Step (6/24): rms3.
+BasicBWCollectResults Step (7/24): rmsf.
+BasicBWCollectResults Step (8/24): tot_ener.
+
+BasicBWCollectResults Step (9/24): temp.
+
+BasicBWCollectResults Step (10/24): pressure.
+
+BasicBWCollectResults Step (11/24): volume.
+
+BasicBWCollectResults Step (12/24): tot_ener2.
+
+BasicBWCollectResults Step (13/24): temp2.
+
+BasicBWCollectResults Step (14/24): pressure2.
+
+BasicBWCollectResults Step (15/24): volume2.
+
+BasicBWCollectResults Step (16/24): set_end.
+BasicBWCollectResults Step (17/24): clean_topol.
+BasicBWCollectResults Step (18/24): set_end_2.
+BasicBWCollectResults Step (19/24): set_end_3.
+BasicBWCollectResults Step (20/24): set_end_BW.
+BasicBWCollectResults Step (21/24): set_end_4.
+BasicBWCollectResults Step (22/24): set_end_5.
+BasicBWCollectResults Step (23/24): set_end_6.
+BasicBWCollectResults Step (24/24): tar_it.
