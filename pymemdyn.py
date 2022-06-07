@@ -7,7 +7,7 @@ import complex
 import gromacs
 import membrane
 import protein
-import queue
+import pymemqueue
 import settings
 
 
@@ -96,7 +96,7 @@ class Run(object):
             elif self.queue == "svgd":
                 my_queue = queue.Svgd()
         else:
-            my_queue = queue.NoQueue()
+            my_queue = pymemqueue.NoQueue()
 
         self.g.queue = my_queue
 
