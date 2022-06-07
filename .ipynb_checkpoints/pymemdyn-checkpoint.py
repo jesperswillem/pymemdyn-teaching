@@ -154,15 +154,6 @@ class Run(object):
             self.g.select_recipe(stage=step, debug=self.debug)
             self.g.run_recipe(debug=self.debug)
 
-    def moldyn_notebook_info(self,stage="Init"):
-        """
-        Run all steps in a molecular dynamics simulation of a membrane protein
-        """
-        self.g.run_recipe_info(debug=self.debug)
-
-    def moldyn_notebook_run(self, step, stage="Init"):
-        self.g.run_recipe_notebook(debug=self.debug)
-
     def light_moldyn(self):
         """
         This is a function to debug a run in steps
