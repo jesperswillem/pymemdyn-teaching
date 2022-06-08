@@ -2,6 +2,7 @@
 import argparse
 import os
 import shutil
+import glob
 
 import complex
 import gromacs
@@ -127,7 +128,7 @@ class Run(object):
                      "temp.log", "temp.xvg", "tmp.pdb", "tmp_proteinopls.pdb",
                      "topol.top", "topol.tpr", "tot_ener.log", "tot_ener.xvg",
                      "traj_EQ.xtc", "traj_pymol.xtc", "volume.log", 
-                     "volume.xvg", "water.gro", "water.pdb"]
+                     "volume.xvg", "water.gro", "water.pdb","GROMACS.log"]
 
         dirs_to_unlink = ["Rmin", "eq", "eqProd"]
 
@@ -136,6 +137,12 @@ class Run(object):
 
         for target in dirs_to_unlink:
             if os.path.isdir(target): shutil.rmtree(target)
+
+        for backup in glob.glob('#*#'):
+            os.unlink(backup)
+
+        for backup in glob.glob('*_backup*'):
+            os.unlink(backup)
 
         return True
 
@@ -160,8 +167,8 @@ class Run(object):
         """
         self.g.run_recipe_info(debug=self.debug)
 
-    def moldyn_notebook_run(self, step, stage="Init"):
-        self.g.run_recipe_notebook(debug=self.debug)
+    def moldyn_notebook_run(self, command_name, stage="Init"):
+        self.g.run_recipe_notebook(command_name)#, debug=self.debug)
 
     def light_moldyn(self):
         """

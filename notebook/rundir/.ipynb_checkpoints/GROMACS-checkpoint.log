@@ -1,0 +1,191 @@
+06/08/2022 01:50:51 gmx pdb2gmx -f /home/willem/pymemdyn-teaching/notebook/rundir/protein-his.pdb -o /home/willem/pymemdyn-teaching/notebook/rundir/proteinopls.pdb -p /home/willem/pymemdyn-teaching/notebook/rundir/protein.top -i /home/willem/pymemdyn-teaching/notebook/rundir/posre.itp -ignh -ff oplsaa -water spc
+06/08/2022 01:50:51                      :-) GROMACS - gmx pdb2gmx, 2018.6 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx pdb2gmx, version 2018.6
+Executable:   /home/willem/miniconda3/envs/pymemdyn/bin/gmx
+Data prefix:  /home/willem/miniconda3/envs/pymemdyn
+Working dir:  /home/willem/pymemdyn-teaching/notebook/rundir
+Command line:
+  gmx pdb2gmx -f /home/willem/pymemdyn-teaching/notebook/rundir/protein-his.pdb -o /home/willem/pymemdyn-teaching/notebook/rundir/proteinopls.pdb -p /home/willem/pymemdyn-teaching/notebook/rundir/protein.top -i /home/willem/pymemdyn-teaching/notebook/rundir/posre.itp -ignh -ff oplsaa -water spc
+
+Opening force field file /home/willem/miniconda3/envs/pymemdyn/share/gromacs/top/oplsaa.ff/aminoacids.r2b
+All occupancies are one
+Opening force field file /home/willem/miniconda3/envs/pymemdyn/share/gromacs/top/oplsaa.ff/atomtypes.atp
+Atomtype 1Atomtype 2Atomtype 3Atomtype 4Atomtype 5Atomtype 6Atomtype 7Atomtype 8Atomtype 9Atomtype 10Atomtype 11Atomtype 12Atomtype 13Atomtype 14Atomtype 15Atomtype 16Atomtype 17Atomtype 18Atomtype 19Atomtype 20Atomtype 21Atomtype 22Atomtype 23Atomtype 24Atomtype 25Atomtype 26Atomtype 27Atomtype 28Atomtype 29Atomtype 30Atomtype 31Atomtype 32Atomtype 33Atomtype 34Atomtype 35Atomtype 36Atomtype 37Atomtype 38Atomtype 39Atomtype 40Atomtype 41Atomtype 42Atomtype 43Atomtype 44Atomtype 45Atomtype 46Atomtype 47Atomtype 48Atomtype 49Atomtype 50Atomtype 51Atomtype 52Atomtype 53Atomtype 54Atomtype 55Atomtype 56Atomtype 57Atomtype 58Atomtype 59Atomtype 60Atomtype 61Atomtype 62Atomtype 63Atomtype 64Atomtype 65Atomtype 66Atomtype 67Atomtype 68Atomtype 69Atomtype 70Atomtype 71Atomtype 72Atomtype 73Atomtype 74Atomtype 75Atomtype 76Atomtype 77Atomtype 78Atomtype 79Atomtype 80Atomtype 81Atomtype 82Atomtype 83Atomtype 84Atomtype 85Atomtype 86Atomtype 87Atomtype 88Atomtype 89Atomtype 90Atomtype 91Atomtype 92Atomtype 93Atomtype 94Atomtype 95Atomtype 96Atomtype 97Atomtype 98Atomtype 99Atomtype 100Atomtype 101Atomtype 102Atomtype 103Atomtype 104Atomtype 105Atomtype 106Atomtype 107Atomtype 108Atomtype 109Atomtype 110Atomtype 111Atomtype 112Atomtype 113Atomtype 114Atomtype 115Atomtype 116Atomtype 117Atomtype 118Atomtype 119Atomtype 120Atomtype 121Atomtype 122Atomtype 123Atomtype 124Atomtype 125Atomtype 126Atomtype 127Atomtype 128Atomtype 129Atomtype 130Atomtype 131Atomtype 132Atomtype 133Atomtype 134Atomtype 135Atomtype 136Atomtype 137Atomtype 138Atomtype 139Atomtype 140Atomtype 141Atomtype 142Atomtype 143Atomtype 144Atomtype 145Atomtype 146Atomtype 147Atomtype 148Atomtype 149Atomtype 150Atomtype 151Atomtype 152Atomtype 153Atomtype 154Atomtype 155Atomtype 156Atomtype 157Atomtype 158Atomtype 159Atomtype 160Atomtype 161Atomtype 162Atomtype 163Atomtype 164Atomtype 165Atomtype 166Atomtype 167Atomtype 168Atomtype 169Atomtype 170Atomtype 171Atomtype 172Atomtype 173Atomtype 174Atomtype 175Atomtype 176Atomtype 177Atomtype 178Atomtype 179Atomtype 180Atomtype 181Atomtype 182Atomtype 183Atomtype 184Atomtype 185Atomtype 186Atomtype 187Atomtype 188Atomtype 189Atomtype 190Atomtype 191Atomtype 192Atomtype 193Atomtype 194Atomtype 195Atomtype 196Atomtype 197Atomtype 198Atomtype 199Atomtype 200Atomtype 201Atomtype 202Atomtype 203Atomtype 204Atomtype 205Atomtype 206Atomtype 207Atomtype 208Atomtype 209Atomtype 210Atomtype 211Atomtype 212Atomtype 213Atomtype 214Atomtype 215Atomtype 216Atomtype 217Atomtype 218Atomtype 219Atomtype 220Atomtype 221Atomtype 222Atomtype 223Atomtype 224Atomtype 225Atomtype 226Atomtype 227Atomtype 228Atomtype 229Atomtype 230Atomtype 231Atomtype 232Atomtype 233Atomtype 234Atomtype 235Atomtype 236Atomtype 237Atomtype 238Atomtype 239Atomtype 240Atomtype 241Atomtype 242Atomtype 243Atomtype 244Atomtype 245Atomtype 246Atomtype 247Atomtype 248Atomtype 249Atomtype 250Atomtype 251Atomtype 252Atomtype 253Atomtype 254Atomtype 255Atomtype 256Atomtype 257Atomtype 258Atomtype 259Atomtype 260Atomtype 261Atomtype 262Atomtype 263Atomtype 264Atomtype 265Atomtype 266Atomtype 267Atomtype 268Atomtype 269Atomtype 270Atomtype 271Atomtype 272Atomtype 273Atomtype 274Atomtype 275Atomtype 276Atomtype 277Atomtype 278Atomtype 279Atomtype 280Atomtype 281Atomtype 282Atomtype 283Atomtype 284Atomtype 285Atomtype 286Atomtype 287Atomtype 288Atomtype 289Atomtype 290Atomtype 291Atomtype 292Atomtype 293Atomtype 294Atomtype 295Atomtype 296Atomtype 297Atomtype 298Atomtype 299Atomtype 300Atomtype 301Atomtype 302Atomtype 303Atomtype 304Atomtype 305Atomtype 306Atomtype 307Atomtype 308Atomtype 309Atomtype 310Atomtype 311Atomtype 312Atomtype 313Atomtype 314Atomtype 315Atomtype 316Atomtype 317Atomtype 318Atomtype 319Atomtype 320Atomtype 321Atomtype 322Atomtype 323Atomtype 324Atomtype 325Atomtype 326Atomtype 327Atomtype 328Atomtype 329Atomtype 330Atomtype 331Atomtype 332Atomtype 333Atomtype 334Atomtype 335Atomtype 336Atomtype 337Atomtype 338Atomtype 339Atomtype 340Atomtype 341Atomtype 342Atomtype 343Atomtype 344Atomtype 345Atomtype 346Atomtype 347Atomtype 348Atomtype 349Atomtype 350Atomtype 351Atomtype 352Atomtype 353Atomtype 354Atomtype 355Atomtype 356Atomtype 357Atomtype 358Atomtype 359Atomtype 360Atomtype 361Atomtype 362Atomtype 363Atomtype 364Atomtype 365Atomtype 366Atomtype 367Atomtype 368Atomtype 369Atomtype 370Atomtype 371Atomtype 372Atomtype 373Atomtype 374Atomtype 375Atomtype 376Atomtype 377Atomtype 378Atomtype 379Atomtype 380Atomtype 381Atomtype 382Atomtype 383Atomtype 384Atomtype 385Atomtype 386Atomtype 387Atomtype 388Atomtype 389Atomtype 390Atomtype 391Atomtype 392Atomtype 393Atomtype 394Atomtype 395Atomtype 396Atomtype 397Atomtype 398Atomtype 399Atomtype 400Atomtype 401Atomtype 402Atomtype 403Atomtype 404Atomtype 405Atomtype 406Atomtype 407Atomtype 408Atomtype 409Atomtype 410Atomtype 411Atomtype 412Atomtype 413Atomtype 414Atomtype 415Atomtype 416Atomtype 417Atomtype 418Atomtype 419Atomtype 420Atomtype 421Atomtype 422Atomtype 423Atomtype 424Atomtype 425Atomtype 426Atomtype 427Atomtype 428Atomtype 429Atomtype 430Atomtype 431Atomtype 432Atomtype 433Atomtype 434Atomtype 435Atomtype 436Atomtype 437Atomtype 438Atomtype 439Atomtype 440Atomtype 441Atomtype 442Atomtype 443Atomtype 444Atomtype 445Atomtype 446Atomtype 447Atomtype 448Atomtype 449Atomtype 450Atomtype 451Atomtype 452Atomtype 453Atomtype 454Atomtype 455Atomtype 456Atomtype 457Atomtype 458Atomtype 459Atomtype 460Atomtype 461Atomtype 462Atomtype 463Atomtype 464Atomtype 465Atomtype 466Atomtype 467Atomtype 468Atomtype 469Atomtype 470Atomtype 471Atomtype 472Atomtype 473Atomtype 474Atomtype 475Atomtype 476Atomtype 477Atomtype 478Atomtype 479Atomtype 480Atomtype 481Atomtype 482Atomtype 483Atomtype 484Atomtype 485Atomtype 486Atomtype 487Atomtype 488Atomtype 489Atomtype 490Atomtype 491Atomtype 492Atomtype 493Atomtype 494Atomtype 495Atomtype 496Atomtype 497Atomtype 498Atomtype 499Atomtype 500Atomtype 501Atomtype 502Atomtype 503Atomtype 504Atomtype 505Atomtype 506Atomtype 507Atomtype 508Atomtype 509Atomtype 510Atomtype 511Atomtype 512Atomtype 513Atomtype 514Atomtype 515Atomtype 516Atomtype 517Atomtype 518Atomtype 519Atomtype 520Atomtype 521Atomtype 522Atomtype 523Atomtype 524Atomtype 525Atomtype 526Atomtype 527Atomtype 528Atomtype 529Atomtype 530Atomtype 531Atomtype 532Atomtype 533Atomtype 534Atomtype 535Atomtype 536Atomtype 537Atomtype 538Atomtype 539Atomtype 540Atomtype 541Atomtype 542Atomtype 543Atomtype 544Atomtype 545Atomtype 546Atomtype 547Atomtype 548Atomtype 549Atomtype 550Atomtype 551Atomtype 552Atomtype 553Atomtype 554Atomtype 555Atomtype 556Atomtype 557Atomtype 558Atomtype 559Atomtype 560Atomtype 561Atomtype 562Atomtype 563Atomtype 564Atomtype 565Atomtype 566Atomtype 567Atomtype 568Atomtype 569Atomtype 570Atomtype 571Atomtype 572Atomtype 573Atomtype 574Atomtype 575Atomtype 576Atomtype 577Atomtype 578Atomtype 579Atomtype 580Atomtype 581Atomtype 582Atomtype 583Atomtype 584Atomtype 585Atomtype 586Atomtype 587Atomtype 588Atomtype 589Atomtype 590Atomtype 591Atomtype 592Atomtype 593Atomtype 594Atomtype 595Atomtype 596Atomtype 597Atomtype 598Atomtype 599Atomtype 600Atomtype 601Atomtype 602Atomtype 603Atomtype 604Atomtype 605Atomtype 606Atomtype 607Atomtype 608Atomtype 609Atomtype 610Atomtype 611Atomtype 612Atomtype 613Atomtype 614Atomtype 615Atomtype 616Atomtype 617Atomtype 618Atomtype 619Atomtype 620Atomtype 621Atomtype 622Atomtype 623Atomtype 624Atomtype 625Atomtype 626Atomtype 627Atomtype 628Atomtype 629Atomtype 630Atomtype 631Atomtype 632Atomtype 633Atomtype 634Atomtype 635Atomtype 636Atomtype 637Atomtype 638Atomtype 639Atomtype 640Atomtype 641Atomtype 642Atomtype 643Atomtype 644Atomtype 645Atomtype 646Atomtype 647Atomtype 648Atomtype 649Atomtype 650Atomtype 651Atomtype 652Atomtype 653Atomtype 654Atomtype 655Atomtype 656Atomtype 657Atomtype 658Atomtype 659Atomtype 660Atomtype 661Atomtype 662Atomtype 663Atomtype 664Atomtype 665Atomtype 666Atomtype 667Atomtype 668Atomtype 669Atomtype 670Atomtype 671Atomtype 672Atomtype 673Atomtype 674Atomtype 675Atomtype 676Atomtype 677Atomtype 678Atomtype 679Atomtype 680Atomtype 681Atomtype 682Atomtype 683Atomtype 684Atomtype 685Atomtype 686Atomtype 687Atomtype 688Atomtype 689Atomtype 690Atomtype 691Atomtype 692Atomtype 693Atomtype 694Atomtype 695Atomtype 696Atomtype 697Atomtype 698Atomtype 699Atomtype 700Atomtype 701Atomtype 702Atomtype 703Atomtype 704Atomtype 705Atomtype 706Atomtype 707Atomtype 708Atomtype 709Atomtype 710Atomtype 711Atomtype 712Atomtype 713Atomtype 714Atomtype 715Atomtype 716Atomtype 717Atomtype 718Atomtype 719Atomtype 720Atomtype 721Atomtype 722Atomtype 723Atomtype 724Atomtype 725Atomtype 726Atomtype 727Atomtype 728Atomtype 729Atomtype 730Atomtype 731Atomtype 732Atomtype 733Atomtype 734Atomtype 735Atomtype 736Atomtype 737Atomtype 738Atomtype 739Atomtype 740Atomtype 741Atomtype 742Atomtype 743Atomtype 744Atomtype 745Atomtype 746Atomtype 747Atomtype 748Atomtype 749Atomtype 750Atomtype 751Atomtype 752Atomtype 753Atomtype 754Atomtype 755Atomtype 756Atomtype 757Atomtype 758Atomtype 759Atomtype 760Atomtype 761Atomtype 762Atomtype 763Atomtype 764Atomtype 765Atomtype 766Atomtype 767Atomtype 768Atomtype 769Atomtype 770Atomtype 771Atomtype 772Atomtype 773Atomtype 774Atomtype 775Atomtype 776Atomtype 777Atomtype 778Atomtype 779Atomtype 780Atomtype 781Atomtype 782Atomtype 783Atomtype 784Atomtype 785Atomtype 786Atomtype 787Atomtype 788Atomtype 789Atomtype 790Atomtype 791Atomtype 792Atomtype 793Atomtype 794Atomtype 795Atomtype 796Atomtype 797Atomtype 798Atomtype 799Atomtype 800Atomtype 801Atomtype 802Atomtype 803Atomtype 804Atomtype 805Atomtype 806Atomtype 807Atomtype 808Atomtype 809Atomtype 810Atomtype 811Atomtype 812Atomtype 813Atomtype 814
+Opening force field file /home/willem/miniconda3/envs/pymemdyn/share/gromacs/top/oplsaa.ff/aminoacids.rtp
+Residue 1Residue 2Residue 3Residue 4Residue 5Residue 6Residue 7Residue 8Residue 9Residue 10Residue 11Residue 12Residue 13Residue 14Residue 15Residue 16Residue 17Residue 18Residue 19Residue 20Residue 21Residue 22Residue 23Residue 24Residue 25Residue 26Residue 27Residue 28Residue 29Residue 30Residue 31Residue 32Residue 33Residue 34Residue 35Residue 36Residue 37Residue 38Residue 39Residue 40Residue 41Residue 42Residue 43Residue 44Residue 45Residue 46Residue 47Residue 48Residue 49Residue 50Residue 51
+Sorting it all out...
+Opening force field file /home/willem/miniconda3/envs/pymemdyn/share/gromacs/top/oplsaa.ff/aminoacids.hdb
+Opening force field file /home/willem/miniconda3/envs/pymemdyn/share/gromacs/top/oplsaa.ff/aminoacids.n.tdb
+Opening force field file /home/willem/miniconda3/envs/pymemdyn/share/gromacs/top/oplsaa.ff/aminoacids.c.tdb
+Analysing hydrogen-bonding network for automated assignment of histidine
+ protonation. 440 donors and 383 acceptors were found.
+There are 434 hydrogen bonds
+Will use HISE for residue 62
+Will use HISE for residue 95
+Will use HISE for residue 98
+Will use HISE for residue 211
+Will use HISD for residue 217
+Will use HISE for residue 219
+Will use HISE for residue 226
+Will use HISE for residue 267
+Will use HISE for residue 311
+Will use HISE for residue 312
+Will use HISE for residue 316
+8 out of 8 lines of specbond.dat converted successfully
+Special Atom Distance matrix:
+                   MET22   MET26   CYS40   HIS62   CYS89   HIS95   HIS98
+                    SD14    SD51   SG148  NE2312   SG518  NE2571  NE2599
+   MET26    SD51   0.511
+   CYS40   SG148   1.689   1.402
+   HIS62  NE2312   5.006   4.964   3.739
+   CYS89   SG518   1.793   1.653   0.829   3.461
+   HIS95  NE2571   0.894   0.535   0.987   4.617   1.465
+   HIS98  NE2599   0.947   0.506   1.449   5.078   1.666   0.798
+  MET115   SD720   2.255   2.445   1.964   3.104   1.703   2.257   2.775
+  CYS134   SG863   4.511   4.511   3.470   2.295   3.609   4.075   4.789
+  MET157  SD1043   2.945   3.089   2.459   2.970   2.479   2.780   3.460
+  MET170  SD1147   2.183   2.543   2.565   3.912   2.285   2.522   2.941
+  CYS174  SG1179   1.144   1.600   2.539   5.353   2.629   1.809   2.072
+  CYS175  SG1185   1.459   1.955   2.911   5.544   2.884   2.225   2.388
+  CYS179  SG1216   1.107   1.523   2.453   5.337   2.606   1.698   2.007
+  HIS211 NE21485   4.327   4.389   3.734   3.825   4.069   3.981   4.770
+  HIS217 NE21538   5.243   5.185   4.346   4.184   4.809   4.704   5.489
+  HIS219 NE21557   5.490   5.445   4.405   3.182   4.687   4.968   5.718
+  HIS226 NE21603   6.384   6.348   5.348   3.953   5.649   5.872   6.634
+  MET234  SD1665   6.557   6.389   5.204   3.916   5.579   5.867   6.557
+  MET237  SD1689   5.368   5.267   4.288   3.846   4.733   4.764   5.525
+  CYS257  SG1841   2.603   2.416   1.428   3.485   2.046   1.895   2.627
+  MET265  SD1908   1.678   1.762   1.741   4.313   2.165   1.455   2.206
+  HIS267 NE21924   2.357   2.320   2.595   5.431   3.240   2.055   2.690
+  CYS284  SG2051   1.968   1.739   1.439   4.493   2.196   1.258   1.991
+  MET286  SD2064   1.639   1.319   0.525   4.054   1.327   0.798   1.438
+  CYS288  SG2079   1.897   1.801   1.095   3.674   1.620   1.335   2.103
+  MET293  SD2116   2.703   2.423   1.090   3.186   1.616   1.927   2.475
+  HIS311 NE22255   4.670   4.445   3.048   1.971   3.158   3.985   4.465
+  HIS312 NE22265   5.015   4.887   3.555   0.858   3.369   4.504   4.934
+  CYS313  SG2271   4.407   4.270   2.940   1.110   2.747   3.894   4.308
+  HIS316 NE22294   4.728   4.610   3.331   1.054   3.007   4.281   4.622
+                  MET115  CYS134  MET157  MET170  CYS174  CYS175  CYS179
+                   SD720   SG863  SD1043  SD1147  SG1179  SG1185  SG1216
+  CYS134   SG863   2.698
+  MET157  SD1043   1.063   1.832
+  MET170  SD1147   0.936   3.401   1.605
+  CYS174  SG1179   2.297   4.531   2.799   1.839
+  CYS175  SG1185   2.451   4.808   3.019   1.825   0.502
+  CYS179  SG1216   2.312   4.460   2.764   1.921   0.204   0.699
+  HIS211 NE21485   2.963   1.591   1.925   3.361   4.043   4.341   3.944
+  HIS217 NE21538   4.068   2.013   3.094   4.620   5.144   5.510   5.013
+  HIS219 NE21557   3.889   1.265   2.948   4.550   5.479   5.797   5.381
+  HIS226 NE21603   4.790   2.172   3.806   5.390   6.298   6.610   6.197
+  MET234  SD1665   5.234   2.759   4.435   6.013   6.761   7.140   6.637
+  MET237  SD1689   4.140   1.883   3.224   4.795   5.395   5.772   5.266
+  CYS257  SG1841   2.141   2.446   1.933   2.843   3.003   3.435   2.868
+  MET265  SD1908   1.728   3.155   1.748   1.921   1.609   2.046   1.468
+  HIS267 NE21924   3.082   3.966   2.922   3.184   2.215   2.687   2.016
+  CYS284  SG2051   2.496   3.425   2.506   2.916   2.380   2.870   2.207
+  MET286  SD2064   2.158   3.493   2.494   2.690   2.408   2.838   2.285
+  CYS288  SG2079   1.598   2.765   1.665   2.176   2.255   2.673   2.136
+  MET293  SD2116   2.313   2.789   2.398   3.120   3.379   3.781   3.269
+  HIS311 NE22255   3.461   2.444   3.263   4.395   5.249   5.587   5.167
+  HIS312 NE22265   3.398   2.546   3.304   4.285   5.513   5.758   5.475
+  CYS313  SG2271   2.904   2.469   2.918   3.809   4.949   5.203   4.910
+  HIS316 NE22294   3.196   2.944   3.322   4.052   5.288   5.501   5.268
+                  HIS211  HIS217  HIS219  HIS226  MET234  MET237  CYS257
+                 NE21485 NE21538 NE21557 NE21603  SD1665  SD1689  SG1841
+  HIS217 NE21538   1.419
+  HIS219 NE21557   1.785   1.273
+  HIS226 NE21603   2.361   1.555   0.967
+  MET234  SD1665   3.359   2.232   1.774   1.741
+  MET237  SD1689   1.828   0.646   0.998   1.393   1.635
+  CYS257  SG1841   2.510   2.941   3.154   4.052   3.979   2.907
+  MET265  SD1908   2.689   3.623   3.991   4.826   5.175   3.826   1.498
+  HIS267 NE21924   3.107   3.732   4.474   5.180   5.446   4.021   2.118
+  CYS284  SG2051   3.100   3.618   4.081   4.919   4.901   3.708   1.095
+  MET286  SD2064   3.555   4.126   4.333   5.247   5.121   4.113   1.207
+  CYS288  SG2079   2.711   3.446   3.645   4.549   4.664   3.501   0.779
+  MET293  SD2116   3.259   3.583   3.570   4.502   4.170   3.411   0.908
+  HIS311 NE22255   3.703   3.583   2.948   3.773   3.025   3.107   2.578
+  HIS312 NE22265   4.058   4.204   3.283   4.074   3.668   3.779   3.319
+  CYS313  SG2271   3.860   4.117   3.344   4.216   3.852   3.742   2.821
+  HIS316 NE22294   4.380   4.683   3.834   4.670   4.323   4.305   3.380
+                  MET265  HIS267  CYS284  MET286  CYS288  MET293  HIS311
+                  SD1908 NE21924  SG2051  SD2064  SG2079  SD2116 NE22255
+  HIS267 NE21924   1.357
+  CYS284  SG2051   1.133   1.274
+  MET286  SD2064   1.462   2.117   0.935
+  CYS288  SG2079   0.873   1.878   0.947   0.894
+  MET293  SD2116   2.125   2.834   1.606   1.147   1.261
+  HIS311 NE22255   3.921   4.686   3.593   3.236   3.101   2.102
+  HIS312 NE22265   4.379   5.391   4.340   3.865   3.629   2.867   1.281
+  CYS313  SG2271   3.852   4.885   3.797   3.269   3.082   2.311   1.153
+  HIS316 NE22294   4.316   5.410   4.314   3.714   3.568   2.827   1.662
+                  HIS312  CYS313
+                 NE22265  SG2271
+  CYS313  SG2271   0.628
+  HIS316 NE22294   0.698   0.621
+Linking CYS-174 SG-1179 and CYS-179 SG-1216...
+Making bonds...
+Number of bonds was 4820, now 4820
+Generating angles, dihedrals and pairs...
+Before cleaning: 12649 pairs
+Before cleaning: 12799 dihedrals
+Keeping all generated dihedrals
+Making cmap torsions...
+There are 12799 dihedrals,  924 impropers, 8746 angles
+          12553 pairs,     4820 bonds and     0 virtual sites
+Total mass 33108.893 a.m.u.
+Total charge 14.000 e
+Writing topology
+
+Writing coordinate file...
+
+GROMACS reminds you: "In the processing of models we must be especially cautious of the human weakness to think that models can be verified or validated. Especially one's own." (Roald Hoffmann)
+06/08/2022 01:50:51 Using the Oplsaa force field in directory oplsaa.ff
+
+Reading /home/willem/pymemdyn-teaching/notebook/rundir/protein-his.pdb...
+Read 2326 atoms
+Analyzing pdb file
+Splitting chemical chains based on TER records or chain id changing.
+There are 1 chains and 0 blocks of water and 299 residues with 2326 atoms
+
+  chain  #res #atoms
+  1 ' '   299   2326  
+
+Reading residue database... (oplsaa)
+Processing chain 1 (2326 atoms, 299 residues)
+Identified residue PRO21 as a starting terminus.
+Identified residue LYS319 as a ending terminus.
+Start terminus PRO-21: PRO-NH2+
+End terminus LYS-319: COO-
+Checking for duplicate atoms....
+Generating any missing hydrogen atoms and/or adding termini.
+Now there are 299 residues with 4758 atoms
+		--------- PLEASE NOTE ------------
+You have successfully generated a topology from: /home/willem/pymemdyn-teaching/notebook/rundir/protein-his.pdb.
+The Oplsaa force field and the spc water model are used.
+		--------- ETON ESAELP ------------

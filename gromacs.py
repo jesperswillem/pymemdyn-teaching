@@ -336,57 +336,64 @@ class Gromacs(object):
 
         return True  
 
-    def run_recipe_notebook(self, debug=False):
+    def run_recipe_notebook(self, command_name):
         """
         run_recipe: Run recipe for the complex
         """
         if not hasattr(self, "recipe"):
-             self.select_recipe(debug=debug)
+             self.select_recipe(debug=True)
 
         self.repo_dir = self.wrapper.repo_dir
-        print("2",self.recipe.steps)
-        # for n, command_name in enumerate(self.recipe.steps):
-        #     command = self.recipe.recipe[command_name]
+        command = self.recipe.recipe[command_name]
 
-        #     if command_name in self.recipe.breaks.keys():
-        #         command["options"] = self.set_options(command["options"],
-        #                              self.recipe.breaks[command_name])
+        
+        # Print some information about the step
+        if command_name in self.recipe.breaks.keys():
+            command["options"] = self.set_options(command["options"],
+                                 self.recipe.breaks[command_name])
 
         #     # NOW RUN IT !
-        #     self.broker.dispatch("{0} Step ({1}/{2}): {3}.".format(
-        #         self.recipe.__class__.__name__,
-        #         n + 1, len(self.recipe.steps),
-        #         command_name))
-        #     if ("gromacs") in command:
-        #         # Either run a Gromacs pure command...
-        #         if hasattr(self, "queue"): command["queue"] = self.queue
-        #         out, err = self.wrapper.run_command(command)
-        #         logging.debug(" ".join(self.wrapper.generate_command(command)))
-        #         logging.debug(err.decode().strip('\n'))
-        #         logging.debug(out.decode().strip('\n'))
-        #         ## Next line tests Gromacs output checking for known errors
-        #         groerrors.GromacsMessages(gro_err=err,
-        #                                   command=command["gromacs"])
+        self.broker.dispatch("{0} : {1}.".format(
+                                self.recipe.__class__.__name__,
+                                command_name))
+        print("Running the following command\n{}".format(command))
+        print('\n========================INFO============================\n')
+        print(self.recipe.steps_info[command_name])
+        print('\n========================INFO END========================\n')
 
-        #         # Some commands are unable to log via flag, so we catch and
-        #         # redirect stdout and stderr
-        #         if command["gromacs"] in ["energy"]:
-        #             self.manual_log(command, out)
+        if ("gromacs") in command:
+            # Either run a Gromacs pure command...
+            if hasattr(self, "queue"): command["queue"] = self.queue
 
-        #     else:
-        #         # ...or run a local function
-        #         logging.debug(command)
-        #         try:
-        #             f = getattr(self, command["command"])
-        #         except AttributeError:
-        #             # Fallback to the utils module
-        #             f = getattr(utils, command["command"])
+            out, err = self.wrapper.run_command(command)
+            logging.debug(" ".join(self.wrapper.generate_command(command)))
+            logging.debug(err.decode().strip('\n'))
+            logging.debug(out.decode().strip('\n'))
+            ## Next line tests Gromacs output checking for known errors
+            groerrors.GromacsMessages(gro_err=err,
+                                      command=command["gromacs"])
 
-        #         if ("options") in command:
-        #             f(**command["options"])
-        #         else:
-        #             f()
-        #         logging.debug("FUNCTION: " + str(f.__doc__).strip())
+            outstring = out.decode("utf-8")
+            print(outstring)
+            # Some commands are unable to log via flag, so we catch and
+            # redirect stdout and stderr
+            #if command["gromacs"] in ["energy"]:
+            #    self.manual_log(command, out)
+
+        else:
+            # ...or run a local function
+            logging.debug(command)
+            try:
+                f = getattr(self, command["command"])
+            except AttributeError:
+                # Fallback to the utils module
+                f = getattr(utils, command["command"])
+        
+            if ("options") in command:
+                f(**command["options"])
+            else:
+                f()
+                logging.debug("FUNCTION: " + str(f.__doc__).strip())
 
         return True        
     def select_recipe(self, stage="", debug=False):

@@ -14,6 +14,42 @@ class BasicInit(object):
                       "get_charge", "genion", "grompp2", "trjconv2",
                       "grompp3", "trjconv3", "clean_pdb"]
 
+        self.steps_info = {
+                    "pdb2gmx":'GROMACS command\nConvert the input pdb file to a gromacs object', 
+                    "set_itp":'Python script (gromacs.py)\nTakes the generated .top file and stores it as itp file for later use', 
+                    "concat":'Python script (utils.py)\nCombines listed pdb files ',  
+                    "editconf":'TEST', 
+                    "set_protein_size":'TEST', 
+                    "editconf2":'TEST', 
+                    "set_protein_size2":'TEST', 
+                    "set_popc":'TEST', 
+                    "editconf3":'TEST',  
+                    "editconf4":'TEST', 
+                    "make_topol":'TEST', 
+                    "editconf5":'TEST', 
+                    "solvate":'TEST', 
+                    "set_water":'TEST', 
+                    "editconf6":'TEST', 
+                    "editconf7":'TEST', 
+                    "solvate2":'TEST', 
+                    "count_lipids":'TEST', 
+                    "make_topol2":'TEST', 
+                    "make_topol_lipids":'TEST', 
+                    "make_ffoplsaanb":'TEST', 
+                    "set_grompp":'TEST', 
+                    "set_chains":'TEST', 
+                    "make_ndx":'TEST', 
+                    "grompp":'TEST', 
+                    "trjconv":'TEST', 
+                    "get_charge":'TEST', 
+                    "genion":'TEST', 
+                    "grompp2":'TEST',  
+                    "trjconv2":'TEST', 
+                    "grompp3":'TEST',  
+                    "trjconv3":'TEST',  
+                    "clean_pdb":'TEST'
+        }              
+
         # And then we define each step
         self.recipe = \
             {"pdb2gmx": {"gromacs": "pdb2gmx",  # 1
