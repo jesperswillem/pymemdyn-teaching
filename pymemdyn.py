@@ -141,8 +141,8 @@ class Run(object):
         for backup in glob.glob('#*#'):
             os.unlink(backup)
 
-        for backup in glob.glob('*_backup*'):
-            os.unlink(backup)
+        #for backup in glob.glob('*_backup*'):
+        #    os.unlink(backup)
 
         return True
 

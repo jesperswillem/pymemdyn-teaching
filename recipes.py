@@ -24,30 +24,32 @@ class BasicInit(object):
                     "set_protein_size2": 'Python function (gromacs.py)\n Get the protein maximum length from a pdb file (in z direction)', 
                     "set_popc":'Python function (gromacs.py)\n Create a pdb file only with the lipid bilayer (POPC), no waters. \nSet some measures on the fly (height of the bilayer)\n\n != Have a look in PyMol to see what this .pdb file looks like =!', 
                     "editconf3":'GROMACS command\n Adjust the box size of the system to take into consideration the POPC bilayer',  
+                    "make_ndx_lig":"GROMACS command\n Generate ndx file for the ligand" ,
+                    "genrestr_lig":"GROMACS command\nAdd positional restrains for the ligand",
                     "editconf4":'GROMACS command\n Create .gro file of the lipid bilayer', 
-                    "make_topol":'Python command (gromacs.py\n Add lipid positions to topol.top', 
+                    "make_topol":'Python function (gromacs.py\n Add lipid positions to topol.top', 
                     "editconf5":'GROMACS command\n Check if any adjustments need to be made with the new lipids added', 
                     "solvate":'GROMACS command\n Adding POP definitions in the topol.top file', 
-                    "set_water":'Python command (gromacs.py\nCreate a water layer for a box != You can load water.pdb in PyMOL =!', 
+                    "set_water":'Python function (gromacs.py\nCreate a water layer for a box \n!= You can load water.pdb in PyMOL =!', 
                     "editconf6":'GROMACS command\n create a box for the water molecules', 
                     "editconf7":'GROMACS command\n adjust the protein/POPC box for the waters', 
-                    "solvate2":'GROMACS command\n solvate the protein/POPC box with the box of waters', 
-                    "count_lipids":'Python command (gromacs.py)\nCounts the lipids in popc and makes atom tags (N4) for bookkeeping', 
-                    "make_topol2":'Python command (utils.py)\n Adjust the old topol.top file with the new topology', 
-                    "make_topol_lipids":'Python command (gromacs.py)\n Add lipid positions to topol.top', 
-                    "make_ffoplsaanb":'Python command (utils.py)\n Join all OPLS force fields needed to run the simulation', 
-                    "set_grompp":'TEST', 
-                    "set_chains":'TEST', 
-                    "make_ndx":'TEST', 
-                    "grompp":'TEST', 
-                    "trjconv":'TEST', 
-                    "get_charge":'TEST', 
-                    "genion":'TEST', 
-                    "grompp2":'TEST',  
-                    "trjconv2":'TEST', 
-                    "grompp3":'TEST',  
-                    "trjconv3":'TEST',  
-                    "clean_pdb":'TEST'
+                    "solvate2":'GROMACS command\n solvate the protein/POPC box with the box of waters\n != you can load tmp.pdb in PyMOL =!"', 
+                    "count_lipids":'Python function (gromacs.py)\nCounts the lipids in popc and makes atom tags (N4) for bookkeeping', 
+                    "make_topol2":'Python function (utils.py)\n Adjust the old topol.top file with the new topology', 
+                    "make_topol_lipids":'Python function (gromacs.py)\n Add lipid positions to topol.top', 
+                    "make_ffoplsaanb":'Python function (utils.py)\n Join all OPLS force fields needed to run the simulation', 
+                    "set_grompp":'Python function (gromacs.py)\n Copy template files in templates folder to working dir', 
+                    "set_chains":'Python function (gromacs.py)\n If we are dealing with a GPCR dimer we need to correct atom numbering after protonation', 
+                    "make_ndx":'GROMACS command\n Make GROMACS index file, which is useful for bookkeeping (which atom is what)', 
+                    "grompp":'GROMACS command\n gmx grompp (the gromacs preprocessor) reads a molecular topology file, checks the validity of the file, expands the topology from a molecular description to an atomic description.', 
+                    "trjconv":'GROMACS command\nCan convert trajectory files, in this case is used tom make a new topology file based on tmp.pdb and topol.tpr', 
+                    "get_charge":'Python function (gromacs.py)\n Gets the total charge of a system using gromacs grompp command ', 
+                    "genion":'GROMACS command\n randomly replaces solvent molecules with monoatomic ions.', 
+                    "grompp2":'GROMACS command\n gmx grompp (the gromacs preprocessor) reads a molecular topology file, checks the validity of the file, expands the topology from a molecular description to an atomic description.',  
+                    "trjconv2":'GROMACS command\nCan convert trajectory files, in this case is used to make a new topology file based on putput.pdb and topol.tpr', 
+                    "grompp3":'GROMACS command\n gmx grompp (the gromacs preprocessor)',  
+                    "trjconv3":'GROMACS command\nCan convert trajectory files, in this case creates hexagon.pdb, which contains the whole system for further refinement != Open in PyMOL =!',  
+                    "clean_pdb":'Python function\n Remove incorrectly allocated atom identifiers in pdb file'
         }              
 
         # And then we define each step
@@ -241,8 +243,8 @@ class BasicInit(object):
              "trjconv2": {"trans": "membrane_complex.complex.trans"}
              }
 
-        if kwargs["debug"] or False:
-            self.recipe["set_grompp"]["options"]["steep.mdp"] = "steepDEBUG.mdp"
+        #if kwargs["debug"] or False:
+        #    self.recipe["set_grompp"]["options"]["steep.mdp"] = "steepDEBUG.mdp"
 
 
 # This recipe modifies the previous one taking a ligand into account
