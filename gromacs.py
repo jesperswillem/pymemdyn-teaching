@@ -331,8 +331,7 @@ class Gromacs(object):
              self.select_recipe(debug=debug)
 
         self.repo_dir = self.wrapper.repo_dir
-        for recipe in self.recipe.steps:
-            print(recipe)
+        print(self.recipe.steps)
 
         return True  
 
