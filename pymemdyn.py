@@ -5,7 +5,7 @@ import shutil
 import glob
 
 import complex
-import gromacs
+import pmd_gromacs
 import membrane
 import protein
 import pymemqueue
@@ -83,7 +83,7 @@ class Run(object):
         full_complex.complex = prot_complex
         full_complex.membrane = self.membr
 
-        self.g = gromacs.Gromacs(membrane_complex=full_complex)
+        self.g = pmd_gromacs.Gromacs(membrane_complex=full_complex)
 
         # NOTE: If not provided in command line, self.queue is set to
         # NoQueue

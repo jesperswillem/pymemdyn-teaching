@@ -1,6 +1,6 @@
 import os
 
-import gromacs
+import pmd_gromacs
 
 
 class Membrane(object):
@@ -10,7 +10,7 @@ class Membrane(object):
     def __init__(self, *args, **kwargs):
         if "pdb" not in kwargs.keys():
             self.pdb = os.path.join(
-                gromacs.Wrapper().repo_dir, "x4bilayer.pdb")
+                pmd_gromacs.Wrapper().repo_dir, "x4bilayer.pdb")
         else:
             self.pdb = kwargs["pdb"]
 
